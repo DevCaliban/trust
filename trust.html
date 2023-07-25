@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="trust.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="icon" href="https://tinypic.host/images/2023/07/20/trust-modified.png">
+    <title>Trust Wallet Help Desk</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600;700&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background: #0b65c6 !important;
+            padding: 0.4rem 0;
+            color: #fff;
+        }
+
+        .img img {
+            width: 2.5rem;
+            height: 2.5rem;
+            aspect-ratio: 1/1;
+            border-radius: 0.8rem;
+            margin-right: 0.4rem;
+
+        }
+
+        /* end of nav  */
+
+        /* home section  */
+        .home {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #0b65c6;
+            padding: 4rem;
+            color: #fff;
+        }
+
+        .home-container {
+            padding: 3rem 0;
+        }
+
+        .home-title {
+            align-items: center;
+            padding: 2rem;
+
+        }
+
+        .home-title h1 {
+            font-size: 3rem;
+        }
+
+        .home-title h6 {
+            font-size: 1rem;
+        }
+
+        .home-img img {
+            width: 550px;
+        }
+
+        .app-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .app-links a {
+            width: 10rem;
+            background: black;
+            margin: 0.3rem;
+            text-align: center;
+            border-radius: 0.3rem;
+            padding: 0.2rem;
+            color: #fff;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .app-links h6 {
+            font-size: 7px;
+        }
+
+        .app-links h5,
+        .app-links h4 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .app-links img {
+            width: 30px;
+
+        }
+
+        .icon1 {
+            background: #fff;
+            border-radius: 2rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .home {
+                grid-template-columns: 1fr;
+
+            }
+
+            .app-links {
+                flex-direction: column;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+            .home {
+                padding: 0.3rem;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .home-img img {
+                width: 300px;
+            }
+        }
+
+
+        /* end of home section  */
+
+
+
+        /* cta section  */
+
+        .cta-contents {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-items: center;
+            margin-top: 1.2rem;
+        }
+
+        .cta-content {
+            display: flex;
+            padding: 10px;
+        }
+
+        .cta-content span {
+            margin-right: 1rem;
+        }
+
+        .cta-content i {
+            color: #0b65c6;
+            font-size: 1.4rem;
+        }
+
+        .cta-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width:1024px) {
+            .cta-contents {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* end cta section  */
+
+
+
+        /* asurance section  */
+
+        .asurance {
+            margin-top: 3rem;
+        }
+
+
+        .asurance-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .asurance-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .asurance-title h1 {
+            font-weight: 800;
+        }
+
+        .asurance-title h6 {
+            font-size: 1.4rem;
+            color: #575656;
+        }
+
+        .asurance-content {
+            object-fit: contain;
+        }
+
+        .asurance-contents {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .asurance-content img {
+            width: 10rem;
+        }
+
+        .asurance-contents li {
+            border: 1px solid rgb(233, 233, 233);
+            padding: 2rem;
+        }
+
+
+        .asurance-content i {
+            margin-right: 0.4rem;
+            color: rgb(0, 124, 0);
+        }
+
+        .asurance button {
+            padding: 1rem;
+            background: #0b65c6;
+            border: none;
+            outline: none;
+            color: #fff;
+            border-radius: 0.3rem;
+            font-size: 1.2rem;
+            margin: 2rem 0;
+        }
+
+        .links-down {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .asurance-contents-down {
+            display: flex;
+            gap: 5rem;
+        }
+
+        @media screen and (max-width:1024px) {
+            .asurance {
+                text-align: center;
+            }
+
+            .cta-desc {
+                text-align: center;
+            }
+
+
+            .asurance-contents {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 0;
+            }
+
+            .asurance-contents li {
+                border: none;
+            }
+
+
+        }
+
+
+
+        /* end asurance section  */
+
+
+        .cta-desc {
+            max-height: 100vh;
+            display: flex;
+            padding: 7rem 10rem;
+        }
+
+        .cta-desc-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .cta-desc-content h1 {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+
+        .cta-desc-content h6 {
+            font-size: 1.4rem;
+            color: #575656;
+        }
+
+        .cta-desc-img img {
+            width: calc(100%);
+        }
+
+        @media screen and (max-width:1024px) {
+            .cta-desc-container {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-desc {
+                max-height: 100vh;
+                display: flex;
+                padding: 0.8rem;
+            }
+
+
+        }
+
+
+        .last h5 {
+            font-weight: 700;
+        }
+
+        .last,
+        .links-down {
+            justify-items: center;
+            align-items: center;
+        }
+
+        .last {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .last .links-header {
+            margin-right: 1.5rem;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .last {
+                flex-direction: column;
+            }
+
+            .cta-desc-reverse {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .asurance-contents-down {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 5rem;
+            }
+
+            .last,
+            .links-down {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+    <script src="//code.tidio.co/4f7fgrqi3sjnffi2h9qkosd6ao1duulo.js" async></script>
+</head>
+
+<body>
+    <header>
+        <div class="img">
+            <img src="https://acquisitionlab.s3.ap-southeast-2.amazonaws.com/cms/yy3CZEi3TOJ0M17ftx0w.png" alt="trust">
+            <h3>Trust Wallet</h3>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-container">
+            <div class="home-title">
+                <h1>The most trusted & secure crypto wallet</h1>
+                <h6>Buy, store, collect NFTs, exchange & earn crypto. Join 60 million+ people using Trust Wallet.</h6>
+            </div>
+            <div class="app-links">
+                <a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8"><span class=".icon"><img
+                            class=".icon1" src="https://cdn-icons-png.flaticon.com/128/2175/2175370.png"
+                            alt=""></span><span>
+                        <H6>DOWNLOAD ON THE</H6>
+                        <H4>App Store</H4>
+                    </span></a>
+
+                <a
+                    href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite"><span
+                        class=".icon"><img src="https://cdn-icons-png.flaticon.com/128/300/300218.png"
+                            alt=""></span><span>
+                        <H6>GET IT ON</H6>
+                        <H4>Google Play</H4>
+                    </span></a>
+
+                <a href="https://trustwallet.com/dl/apk"><span class=".icon"><img
+                            src="https://cdn-icons-png.flaticon.com/128/888/888839.png" alt=""></span><span>
+                        <H6>DOWNLOAD APK 6.0+</H6>
+                        <H4>Android</H4>
+                    </span></a>
+
+                <a href="https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph"><span
+                        class=".icon"><img src="https://cdn-icons-png.flaticon.com/128/888/888846.png"
+                            alt=""></span><span>
+                        <H6>AVAILABlE</H6>
+                        <H5>Chrome Web Store</H5>
+                    </span></a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="https://trustwallet.com/assets/images/home_hero.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="cta">
+        <div class="cta-contents">
+            <div class="cta-content"><span><i class="bi bi-credit-card-fill"></i>
+                </span>
+                <h3>Buy Crypto With a Card </h3>
+            </div>
+            <div class="cta-content"><span><i class="bi bi-arrow-left-right"></i></span>
+                <h3>Exchange Instantly </h3>
+            </div>
+            <div class="cta-content"><span><i class="bi bi-shield-lock-fill"></i></span>
+                <h3>Private & Secure </h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="asurance">
+        <div class="asurance-container">
+            <div class="asurance-title">
+                <h1>You Deserve Easy Access to Cryptocurrencies</h1>
+                <h6>Trust Wallet is for you if you want to</h6>
+            </div>
+
+            <div class="asurance-contents">
+                <article class="asurance-content">
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill"></i><span>Buy Bitcoin in under five minutes</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i><span>Easily earn interest on the crypto in your
+                                wallet</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i><span>See your collectibles. Art & NFTs in one
+                                place</span></li>
+                    </ul>
+                </article>
+
+                <article class="asurance-content">
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill"></i><span>Exchange your crypto without leaving the
+                                app</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i>Track charts and prices within the app</li>
+                        <li><i class="bi bi-check-circle-fill"></i><span>Keep your crypto safe from hackers &
+                                scammers</span></li>
+                    </ul>
+                </article>
+            </div>
+            <button>Download Now</button>
+        </div>
+    </section>
+
+
+    <section class="cta-desc">
+        <div class="cta-desc-container cta-desc-reverse">
+            <div class="cta-desc-img">
+                <img src="https://trustwallet.com/assets/images/home_cards.png" alt="">
+            </div>
+
+            <div class="cta-desc-content">
+                <h1>Buy Crypto With a Card</h1>
+                <h6>Get your first Bitcoin, Ethereum, Binance Coin and many other cryptocurrencies.</h6>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-desc">
+        <div class="cta-desc-container">
+            <div class="cta-desc-content">
+                <h1>Exchange Instantly</h1>
+                <h6>No forms, no selfies. Trade crypto anytime with ease.</h6>
+            </div>
+
+            <div class="cta-desc-img">
+                <img src="https://trustwallet.com/assets/images/home_dex.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-desc">
+        <div class="cta-desc-container cta-desc-reverse">
+            <div class="cta-desc-img">
+                <img src="https://trustwallet.com/assets/images/home_security.png" alt="">
+            </div>
+            <div class="cta-desc-content">
+                <h1>Private & Secure</h1>
+                <h6>Only you can access your wallet. We don’t collect any personal data.</h6>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-desc">
+        <div class="cta-desc-container">
+
+            <div class="cta-desc-content">
+                <h1>Browser for DApps</h1>
+                <h6>Use your favourite decentralized apps & find new ones, without leaving your wallet.</h6>
+            </div>
+
+            <div class="cta-desc-img">
+                <img src="https://trustwallet.com/assets/images/home_dapps.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="asurance">
+        <div class="asurance-container">
+            <div class="asurance-title">
+                <h1>Get started in 3 simple steps</h1>
+                <h6>It only takes a few minutes</h6>
+            </div>
+
+            <div class="asurance-contents-down">
+                <article class="asurance-content">
+                    <img src="https://tinypic.host/images/2023/07/16/WhatsApp-Image-2023-07-15-at-11.32.01-PM.jpeg"
+                        alt="">
+                    <h5>Download Trust Wallet </h5>
+                </article>
+
+                <article class="asurance-content">
+                    <img src="https://cdn.create.vista.com/api/media/small/378610696/stock-vector-business-workspace-concept-stylish-young"
+                        alt="">
+                    <h5> Create a new wallet </h5>
+                </article>
+
+                <article class="asurance-content">
+                    <img src="https://img.freepik.com/premium-vector/hacker-male-character-carry-huge-stolen-credit-card-fraud-phishing-data-steal-money-internet-email-spoofing_87771-23566.jpg?w=360"
+                        alt="">
+                    <h5> Get some crypto </h5>
+                </article>
+            </div>
+            <button>Download Now</button>
+        </div>
+    </section>
+
+    <section class="last links-down">
+
+        <div class="links-header">
+            <h5>Get the Trust Wallet app now! </h5>
+            <h6>The most trusted & secure crypto wallet </h6>
+        </div>
+        <div class="app-links">
+            <a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8"><span class=".icon"><img class=".icon1"
+                        src="https://cdn-icons-png.flaticon.com/128/2175/2175370.png" alt=""></span><span>
+                    <H6>DOWNLOAD ON THE</H6>
+                    <H4>App Store</H4>
+                </span></a>
+
+            <a
+                href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite"><span
+                    class=".icon"><img src="https://cdn-icons-png.flaticon.com/128/300/300218.png" alt=""></span><span>
+                    <H6>GET IT ON</H6>
+                    <H4>Google Play</H4>
+                </span></a>
+
+            <a href="https://trustwallet.com/dl/apk"><span class=".icon"><img
+                        src="https://cdn-icons-png.flaticon.com/128/888/888839.png" alt=""></span><span>
+                    <H6>DOWNLOAD APK 6.0+</H6>
+                    <H4>Android</H4>
+                </span></a>
+
+            <a href="https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph"><span
+                    class=".icon"><img src="https://cdn-icons-png.flaticon.com/128/888/888846.png" alt=""></span><span>
+                    <H6>AVAILABlE</H6>
+                    <H5>Chrome Web Store</H5>
+                </span></a>
+        </div>
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+
+        .card {
+            border-radius: 25px;
+            width: 320px;
+            max-height: 400px;
+            border: 1px solid rgb(0, 105, 243);
+            border-top: none;
+            background: #fff;
+            overflow: scroll;
+        }
+
+
+        .card-image {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            padding: 4px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .card-image .card-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgb(0, 105, 243);
+        }
+
+        .image-content,
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 5px;
+            align-items: center;
+
+        }
+
+        .image-content {
+            row-gap: 5px;
+            position: relative;
+            row-gap: 5px;
+            background: #fff;
+            padding: 25px 0;
+            border-radius: 25px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 105, 243);
+            border-radius: 25px 25px 0 25px;
+
+        }
+
+        .overlay::before,
+        .overlay::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background: rgb(0, 105, 243);
+
+        }
+
+        .overlay::after {
+            border-radius: 0 25px 0 0;
+            background: #fff;
+        }
+
+        .name {
+            font-size: 25px;
+            font-weight: 500;
+            color: rgb(27, 27, 27);
+        }
+
+        .comment {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .button {
+            border: none;
+            color: #fff;
+            background: rgb(0, 105, 243);
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-weight: 700;
+            margin: 12px;
+            cursor: pointer;
+            transition: all 400ms ease;
+        }
+
+        .button:hover {
+            background: #fff;
+            color: rgb(0, 105, 243);
+            border: 2px solid rgb(0, 105, 243);
+        }
+    </style>
+
+    <div class="owl-carousel owl-theme">
+        {% for review in reviews %}
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIUfi3Pv2oM7IBFi0bnRfeebSywMLB4Zgb6OLUFNoxV8Un2YVcIl5NmIyNf3hKD4Asu4&usqp=CAU"
+                        alt="" class="card-img">
+                </div>
+            </div>
+
+            <div class="card-content">
+                <h2 class="name">{{ review.username }}</h2>
+                <p class="description">{{ review.comment }}</p>
+            </div>
+        </div>
+        {% empty %}
+        <p>No Reviews yet</p>
+        {% endfor %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 1,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="w-full">
+            <div
+                style="text-align:center; max-width:300px; background:#0b65c6; border:none; border-radius:10px; margin:10px auto; align-self:center; ">
+                <h6 style="color:#fff; padding:10px; font-weight:lighter">Leave Us a Review</h6>
+            </div>
+
+            <div class="formbold-form-wrapper">
+                <div class="formbold-form-header">
+                    <h5 style="color:#fff;">Leave Us a Review</h5>
+                    <button onclick="chatboxToogleHandler()">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z" />
+                        </svg>
+                    </button>
+                </div>
+                <form method="post" class="formbold-chatbox-form">
+                    {% csrf_token %}
+                    <div class="formbold-mb-5">
+                        <label for="name" class="formbold-form-label"> Your Name </label>
+                        <input type="text" name="name" id="name" placeholder="Your Name" class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-mb-5">
+                        <label for="email" class="formbold-form-label"> Email Address </label>
+                        <input type="email" name="email" id="email" placeholder="example@domain.com"
+                            class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-mb-5">
+                        <label for="message" class="formbold-form-label"> Review </label>
+                        <textarea rows="6" name="message" id="message" placeholder="Explain you queries"
+                            class="formbold-form-input"></textarea>
+                    </div>
+
+                    <div>
+                        <button class="formbold-btn w-full">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="formbold-action-buttons">
+                <button class="formbold-action-btn" onclick="chatboxToogleHandler()">
+                    <span class="formbold-cross-icon">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <span class="formbold-chat-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.8333 14.0002V3.50016C19.8333 3.19074 19.7103 2.894 19.4915 2.6752C19.2728 2.45641 18.976 2.3335 18.6666 2.3335H3.49992C3.1905 2.3335 2.89375 2.45641 2.67496 2.6752C2.45617 2.894 2.33325 3.19074 2.33325 3.50016V19.8335L6.99992 15.1668H18.6666C18.976 15.1668 19.2728 15.0439 19.4915 14.8251C19.7103 14.6063 19.8333 14.3096 19.8333 14.0002ZM24.4999 7.00016H22.1666V17.5002H6.99992V19.8335C6.99992 20.1429 7.12284 20.4397 7.34163 20.6585C7.56042 20.8772 7.85717 21.0002 8.16659 21.0002H20.9999L25.6666 25.6668V8.16683C25.6666 7.85741 25.5437 7.56066 25.3249 7.34187C25.1061 7.12308 24.8093 7.00016 24.4999 7.00016Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <style>
+        .formbold-mb-5 {
+            margin-bottom: 20px;
+        }
+
+        .formbold-pt-3 {
+            padding-top: 12px;
+        }
+
+        .formbold-main-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px;
+        }
+
+        .formbold-form-wrapper {
+            margin: 0 auto;
+            max-width: 550px;
+            width: 100%;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .formbold-form-wrapper.active {
+            display: block;
+        }
+
+        .formbold-form-label {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            color: #07074d;
+            margin-bottom: 12px;
+        }
+
+        .formbold-form-label-2 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .formbold-form-input {
+            width: 100%;
+            padding: 12px 24px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background: white;
+            font-weight: 500;
+            font-size: 16px;
+            color: #6b7280;
+            outline: none;
+            resize: none;
+        }
+
+        .formbold-form-input:focus {
+            border-color: #0b65c6;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .formbold-btn {
+            text-align: center;
+            font-size: 16px;
+            border-radius: 6px;
+            padding: 14px 32px;
+            border: none;
+            font-weight: 600;
+            background-color: #0b65c6;
+            color: white;
+            cursor: pointer;
+        }
+
+        .formbold-btn:hover {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .formbold--mx-3 {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        .formbold-px-3 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .formbold-form-header {
+            background: #0b65c6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 36px;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .formbold-form-header h3 {
+            font-weight: 700;
+            font-size: 20px;
+            color: white;
+        }
+
+        .formbold-form-header button {
+            color: white;
+            background: transparent;
+            border: none;
+        }
+
+        .formbold-chatbox-form {
+            padding: 32px 36px;
+        }
+
+        .formbold-action-buttons {
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 48px;
+        }
+
+        .formbold-action-btn {
+            width: 70px;
+            height: 70px;
+            background: #0b65c6;
+            color: white;
+            border-radius: 50%;
+            margin-left: 20px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .formbold-action-btn .formbold-cross-icon {
+            display: none;
+        }
+
+        .formbold-action-btn.active .formbold-cross-icon {
+            display: block;
+        }
+
+        .formbold-action-btn.active .formbold-chat-icon {
+            display: none;
+        }
+
+        @media (min-width: 540px) {
+            .sm\:w-half {
+                width: 50%;
+            }
+        }
+    </style>
+    <script>
+        const formWrapper = document.querySelector(".formbold-form-wrapper");
+        const formActionButton = document.querySelector(".formbold-action-btn");
+        function chatboxToogleHandler() {
+            formWrapper.classList.toggle("active");
+            formActionButton.classList.toggle("active");
+        }
+    </script>
+    <header>
+        <div class="img">
+            <img src="https://acquisitionlab.s3.ap-southeast-2.amazonaws.com/cms/yy3CZEi3TOJ0M17ftx0w.png" alt="trust">
+            <h3>Trust Wallet</h3>
+        </div>
+    </header>
+</body>
+
+</html>
